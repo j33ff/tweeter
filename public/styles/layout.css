@@ -24,3 +24,13 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .container {
+  width: 450px;
+  background: white;
+  height: 100vh;
+/*padding-top:300px;*/
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 20px;
+ }
