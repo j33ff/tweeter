@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
  //$("#msgid").html("This is Hello World by JQuery");
   $('.char-count').keyup(function () {
     const max = 140;
@@ -7,9 +7,9 @@ $(document).ready(function(){
     $(this).parent().find('.counter').html(max - len);
     // apply class to change color
     if (len > max) {
-      $(this).parent().find('span').addClass("charLimit");
+      $(this).parent().find('span').css('color', 'red');
     } else {
-      $(this).parent().find('span').removeClass("charLimit");
+      $(this).parent().find('span').css('color', 'black');
     }
   });
 

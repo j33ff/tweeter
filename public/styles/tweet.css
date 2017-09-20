@@ -1,0 +1,81 @@
+
+
+
+
+/* Components */
+
+.tweet {
+  background: rgb(245, 248, 250);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+
+.tweet-header {
+  background: #eee;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px
+}
+
+.tweet-footer{
+  border-top: 1px solid lightgrey;
+  padding: 10px;
+}
+
+.tweet-header:after,
+.tweet-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.user-avatar {
+  border-radius: 10%;
+  display: block;
+  float: left;
+  margin: 8px;
+}
+
+.user-handle {
+  text-decoration: none;
+  font-weight: normal;
+  color: #008080;
+  position: absolute;
+  right: 24px;
+  margin-top: 15px;
+  float: right;
+}
+
+.user-name {
+  font-weight: bold;
+  float: left;
+  font-size: 24px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.tweet-actions {
+  color: rgb(101, 119, 134);
+  float: right;
+  visibility: hidden;
+}
+
+.tweet:hover .tweet-actions {
+  visibility: visible;
+}
+
+.tweet-action {
+  margin-left: 8px;
+}
+
+.tweet-content {
+  font-size: 21px;
+  line-height: 28px;
+  padding: 30px;
+}
+
+.tweet-timestamp {
+  color: rgb(101, 119, 134);
+}
