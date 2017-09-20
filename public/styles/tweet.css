@@ -15,6 +15,7 @@ a {
   border-radius: 10px;
   border: 1px solid lightgrey;
   opacity: 0.6;
+  margin-bottom: 20px;
 }
 
 .tweet:hover {
@@ -92,9 +93,6 @@ article.tweet:hover .icon a {
 .icon {
   float: right;
 }
-
-
-
 
 .tweet-content {
   font-size: 21px;
