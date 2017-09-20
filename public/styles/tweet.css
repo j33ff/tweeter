@@ -4,11 +4,21 @@
 
 /* Components */
 
+a {
+  text-decoration: none;
+}
+
+
 .tweet {
   background: rgb(245, 248, 250);
   position: relative;
   border-radius: 10px;
   border: 1px solid lightgrey;
+  opacity: 0.6;
+}
+
+.tweet:hover {
+  opacity: 1;
 }
 
 .tweet-header {
@@ -57,26 +67,37 @@
   text-decoration: none;
 }
 
-.tweet-actions {
-  color: rgb(101, 119, 134);
-  float: right;
+article.tweet .icon a {
+  color: red;
   visibility: hidden;
 }
 
-.tweet:hover .tweet-actions {
+article.tweet:hover .icon a {
   visibility: visible;
 }
 
-.tweet-action {
-  margin-left: 8px;
+/*.icon a.tweet-action{
+  color: rgb(101, 119, 134);
+  float: right;
+
+}*/
+
+
+
+.tweet-timestamp {
+  padding-right: 10px;
+  text-decoration: none;
+  display: block;
 }
+.icon {
+  float: right;
+}
+
+
+
 
 .tweet-content {
   font-size: 21px;
   line-height: 28px;
   padding: 30px;
-}
-
-.tweet-timestamp {
-  color: rgb(101, 119, 134);
 }
