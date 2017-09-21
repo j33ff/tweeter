@@ -53,13 +53,58 @@ var data = [
 
 $(function(){
 
-  function renderTweets(tweets){
-    var tweetsContainer = $('section.tweeter-feed');
-    tweets.forEach(function(tweet){
-      var tweetElement = createTweetElement(tweet);
-      tweetsContainer.append(tweetElement);
+  function loadTweets() {
+    $.ajax({
+      url:'/tweets/',
+      method: 'GET',
+      dataType: 'json',
+      success: function(data){
+        renderTweets(data);
+      },
+      failure: function(err){
+      }
     })
   }
+  loadTweets();
+
+  $("form").on("submit", function( event ) {
+    event.preventDefault();
+
+    if ($('.char-count').val() === ""){
+      alert("you need to type in a character.");
+    }
+    else if ($('.char-count').val().length > 140){
+      alert("you have exceeded the character limit.");
+      return;
+    } else {
+
+      $.ajax({
+        url:'/tweets/',
+        method: 'POST',
+        data: ($(this).serialize()),
+        success: function(data){
+          loadTweets();
+        },
+        failure: function(err){
+        }
+      })
+    }
+  });
+
+  function renderTweets(tweets){
+    var tweetsContainer = $('section.tweeter-feed');
+    tweetsContainer.empty();
+    tweets.forEach(function(tweet){
+      var tweetElement = createTweetElement(tweet);
+      tweetsContainer.prepend(tweetElement);
+    })
+  }
+
+  // $('.compose').submit($('.new-tweet').slideToggle([400]));
+
+  // $('.compose').onclick
+
+
 
   function createTweetElement(tweetData){
     var $tweet = $('<article>').addClass('tweet');
@@ -90,32 +135,8 @@ $(function(){
     return $tweet;
   }
 
-   // <div class="icon">
-   //            <a class=“tweet-action” href=“#”><i class="fa fa-thumbs-up"></i></a>
-   //            <a class=“tweet-action” href=“#”><i class="fa fa-thumbs-up"></i></a>
-   //            <a class=“tweet-action” href=“#”><i class="fa fa-retweet"></i></a>
-   //          </div>
 
-
-
-renderTweets(data);
 
 });
 
 
-
-
-
-// function renderTweets(tweets) {
-//   // loops through tweets
-//     // calls createTweetElement for each tweet
-//     // takes return value and appends it to the tweets container
-//       var tweetsContainer = $('tweeter-feed').html('');
-
-//       tweets.forEach(function(tweet){
-//       var tweetElement = createTweetElements(tweet);
-//       tweetsContainer.append(tweetElement);
-//     });
-// }
-
-// renderTweets(data);

@@ -22,3 +22,20 @@
   line-height: 80px;
   padding-left: 10px;
 }
+
+#nav-bar .compose {
+  float: right;
+  font-size: 1.8em;
+  padding: 10px;
+  border-radius: 5%;
+  background: white;
+  color: #2C8E81;
+  border: 1px solid black;
+  margin-top: 10px;
+
+}
+
+#nav-bar .compose:hover {
+  background: white;
+  color: black;
+}
