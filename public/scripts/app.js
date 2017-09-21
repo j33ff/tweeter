@@ -116,8 +116,7 @@ $(function(){
     var $handle = $('<a>').addClass('user-handle').html(tweetData.user.handle);
     $header.append($img, $name, $handle);
 
-    var $body = $('<div>').addClass("tweet-content").html(tweetData.content.text);
-
+    var $body = $('<div>').addClass("tweet-content").text(tweetData.content.text);
     var $footer = $('<footer>').addClass('tweet-footer');
     var $tweetStamp = $('<div>').addClass('tweet-timestamp').html(tweetData.created_at)
     var $iconDiv = $('<div>').addClass('icon');
