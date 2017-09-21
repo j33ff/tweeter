@@ -83,7 +83,9 @@ article.tweet:hover .icon a {
 
 }*/
 
-
+.tweet-action {
+  padding: 2px;
+}
 
 .tweet-timestamp {
   padding-right: 10px;
