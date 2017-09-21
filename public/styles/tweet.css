@@ -77,12 +77,6 @@ article.tweet:hover .icon a {
   visibility: visible;
 }
 
-/*.icon a.tweet-action{
-  color: rgb(101, 119, 134);
-  float: right;
-
-}*/
-
 .tweet-action {
   padding: 2px;
 }

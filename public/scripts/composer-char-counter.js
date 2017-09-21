@@ -1,5 +1,5 @@
 $(function(){
- //$("#msgid").html("This is Hello World by JQuery");
+
   $('.char-count').keyup(function () {
     const max = 140;
     const len = $(this).val().length;
