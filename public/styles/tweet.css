@@ -98,4 +98,5 @@ article.tweet:hover .icon a {
   font-size: 21px;
   line-height: 28px;
   padding: 30px;
+  overflow-wrap: break-word;
 }

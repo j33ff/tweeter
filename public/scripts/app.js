@@ -100,9 +100,11 @@ $(function(){
     })
   }
 
-  // $('.compose').submit($('.new-tweet').slideToggle([400]));
+  $('.compose').click(function(){
+    $('.new-tweet').slideToggle([400])
+  });
 
-  // $('.compose').onclick
+
 
 
 
