@@ -15,6 +15,11 @@ On the backend, I used Node, Express and MongoDB.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## Screenshots
+
+!['compose tweet'](https://github.com/j33ff/tweeter/blob/master/docs/compose-tweet.png?raw=true)
+!['tweet card'](https://github.com/j33ff/tweeter/blob/master/docs/compose-tweet.png?raw=true)
+
 ## Dependencies
 
 - Express
