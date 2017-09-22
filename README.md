@@ -18,7 +18,7 @@ On the backend, I used Node, Express and MongoDB.
 ## Screenshots
 
 !['compose tweet'](https://github.com/j33ff/tweeter/blob/master/docs/compose-tweet.png?raw=true)
-!['tweet card'](https://github.com/j33ff/tweeter/blob/master/docs/compose-tweet.png?raw=true)
+!['tweet card'](https://github.com/j33ff/tweeter/blob/master/docs/tweet-box.png?raw=true)
 
 ## Dependencies
 
